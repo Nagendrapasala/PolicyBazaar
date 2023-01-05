@@ -1,37 +1,56 @@
 import { Link } from "react-router-dom"
 import "./Navbar.css"
-import { RiArrowDropDownLine } from 'react-icons/ri'
+import { FcCollapse, FcExpand } from 'react-icons/fc'
+import Insurance from "./Insurance"
+import Renew from "./Renew"
+import Claim from "./Claim"
+import { useState } from "react"
+import Support from "./Support"
 const Navbar=()=>
 {
+    const[hoverstate,sethoverstate]=useState({IP:false,RP:false,Cl:false,Sup:false})
     return(
-        <div id="navparent">
+        <>
+        <div id="navparent" onMouseEnter={()=>sethoverstate({IP:false,RP:false,Cl:false,Sup:false})}>
             <div>
-                <img src="https://static.pbcdn.in/cdn/images/new-home/chlogopb.gif?v=1"/>
+                <img alt="policyimage" src="https://static.pbcdn.in/cdn/images/new-home/chlogopb.gif?v=1"/>
             </div>
             <div>
-                <div>
+                <div onMouseEnter={()=>sethoverstate({...hoverstate,IP:true,RP:false,Cl:false,Sup:false})}>
                     <Link>Insurance Products</Link>
-                    <RiArrowDropDownLine size="40"/>
+                    {
+                        hoverstate.IP?<FcCollapse size="20"/>:<FcExpand size="20"/>
+                    }
                 </div>
-                <div>
+                <div onMouseEnter={()=>sethoverstate({...hoverstate,RP:true,IP:false,Cl:false,Sup:false})}>
                     <Link>Renew Your Policy</Link>
-                    <RiArrowDropDownLine size="40"/>
+                    {
+                        hoverstate.RP?<FcCollapse size="20"/>:<FcExpand size="20"/>
+                    }
                 </div>
-                <div>
+                <div onMouseEnter={()=>sethoverstate({...hoverstate,Cl:true,IP:false,RP:false,Sup:false})}>
                     <Link>Claim</Link>
-                    <RiArrowDropDownLine size="40"/>
+                    {
+                        hoverstate.Cl?<FcCollapse size="20"/>:<FcExpand size="20"/>
+                    }
                 </div>
-                <div>
+                <div onMouseEnter={()=>sethoverstate({...hoverstate,Sup:true,IP:false,RP:false,Cl:false})}>
                     <Link>Support</Link>
-                    <RiArrowDropDownLine size="40"/>
+                    {
+                        hoverstate.Sup?<FcCollapse size="20"/>:<FcExpand size="20"/>
+                    }
                 </div>
-                
-                
             </div>
             <div>
-                <button><Link to="/login">Sign in</Link></button>
+                <button onMouseEnter={()=>sethoverstate({IP:false,RP:false,Cl:false,Sup:false})}><Link to="/login">Sign in</Link></button>
             </div>
         </div>
+        {hoverstate.IP?<Insurance />:null}
+        {hoverstate.RP?<Renew />:null}
+        {hoverstate.Cl?<Claim />:null}
+        {hoverstate.Sup?<Support />:null}
+        
+        </>
     )
 }
 export default Navbar

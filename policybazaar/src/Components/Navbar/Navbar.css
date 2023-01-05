@@ -26,21 +26,22 @@
     flex-direction: row;
     justify-content: right;
     width: 70%;
-    gap: 40px;
 }
 #navparent>div:nth-child(2)>div
 {
     display: flex;
     flex-direction: row;
     justify-content: right;
+    gap: 8px;
     align-items: center;
+    padding: 0px 40px;
 }
-#navparent>div:nth-child(2) *
+#navparent>div:nth-child(2) a
 {
     text-decoration: none;
     color: rgb(23, 43, 77);
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
 }
 #navparent>div:nth-child(3) button
 {
@@ -55,3 +56,120 @@
     text-decoration: none;
     color:  #0065ff;
 }
+#navbarinsuranceprod
+{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    padding: 20px;
+    justify-content: space-evenly;
+    gap: 40px;
+    line-height: 40px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 1000;
+}
+#navbarinsuranceprod a
+{
+    text-decoration: none;
+    color: #53617b;
+}
+#navbarinsuranceprod a:hover
+{
+    color: #0065ff;
+}
+#navbarinsuranceprod h3{
+    color: #0065ff;
+}
+.icontext
+{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+}
+#navbarrenew
+{
+    width: 15%;
+    position: absolute;
+    left: 50%;
+    padding: 20px;
+    line-height: 40px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 1000;
+}
+#navbarrenew a,#navbarclaim a
+{
+    text-decoration: none;
+    color: #53617b;
+}
+#navbarrenew a:hover,#navbarclaim a:hover
+{
+    color: #0065ff;
+}
+#navbarclaim
+{
+    width: 20%;
+    position: absolute;
+    left: 60%;
+    padding: 20px;
+    line-height: 40px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 1000;
+}
+#navsupport
+{
+    width: 20%;
+    position: absolute;
+    left: 60%;
+    padding: 20px;
+    line-height: 40px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 1000;
+}
+#navsupport a
+{
+    text-decoration: none;
+    color: #53617b;
+}
+.supportbutton
+{
+    background-color: rgb(230, 252, 255);
+    border: 2px solid rgb(0, 184, 217);
+    width: 30%;
+    border-radius: 10px;
+    font-size: 12px;
+    color: rgb(0, 184, 217);
+    text-align: center;
+}
+.supportwrapper::after
+{
+    content:" ";
+    width: 200px;
+    height: 1px;
+    vertical-align: super;
+    background-color:rgb(0, 184, 217);
+    display:inline-block;
+}
+#navcontact
+{
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+#navcontact div
+{
+    text-align: center;
+    line-height: 20px;
+}
+.contreacticons
+{
+    border: 1px solid gray;
+    padding: 5px;
+    border-radius: 5px;
+}
+#navinfodetails
+{
+    margin-top: 20px;
+}
+
+
