@@ -5,15 +5,25 @@ import Insurance from "./Insurance"
 import Renew from "./Renew"
 import Claim from "./Claim"
 import { useState } from "react"
+import {HiOutlineMenu} from "react-icons/hi"
 import Support from "./Support"
+import SideMenu from "./SideMenu"
 const Navbar=()=>
 {
     const[hoverstate,sethoverstate]=useState({IP:false,RP:false,Cl:false,Sup:false})
+    const[display,setdisplay]=useState(false)
     return(
-        <>
-        <div id="navparent" onMouseEnter={()=>sethoverstate({IP:false,RP:false,Cl:false,Sup:false})}>
+        <div style={{display:"flex",alignItems:"center"}}>
             <div>
-                <img alt="policyimage" src="https://static.pbcdn.in/cdn/images/new-home/chlogopb.gif?v=1"/>
+                 <HiOutlineMenu onClick={()=>
+                {
+                    setdisplay(true)
+                }} id="navmenu" size={30}/>
+            </div>
+        <div id="navparent" onMouseEnter={()=>sethoverstate({IP:false,RP:false,Cl:false,Sup:false})}>
+            
+            <div>
+                <Link to="/"><img alt="policyimage" src="https://static.pbcdn.in/cdn/images/new-home/chlogopb.gif?v=1"/></Link>
             </div>
             <div>
                 <div onMouseEnter={()=>sethoverstate({...hoverstate,IP:true,RP:false,Cl:false,Sup:false})}>
@@ -45,12 +55,13 @@ const Navbar=()=>
                 <button onMouseEnter={()=>sethoverstate({IP:false,RP:false,Cl:false,Sup:false})}><Link to="/login">Sign in</Link></button>
             </div>
         </div>
+        {display?<SideMenu setdisplay={setdisplay}/>:null}
         {hoverstate.IP?<Insurance />:null}
         {hoverstate.RP?<Renew />:null}
         {hoverstate.Cl?<Claim />:null}
         {hoverstate.Sup?<Support />:null}
         
-        </>
+        </div>
     )
 }
 export default Navbar
