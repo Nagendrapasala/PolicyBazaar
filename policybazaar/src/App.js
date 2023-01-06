@@ -1,14 +1,14 @@
-
-import './App.css';
-import AllRoutes from './Components/AllRoutes/AllRoutes';
-import Navbar from './Components/Navbar/Navbar';
+import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import HomePage from "./components/Home/Home";
 
 function App() {
   return (
-    <div>
-      <Navbar/>
-      <AllRoutes />
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
+    </>
   );
 }
 
