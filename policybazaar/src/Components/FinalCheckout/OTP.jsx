@@ -21,7 +21,7 @@ const OTP=()=>
     return(
     <div id="otpparent">
         <h4>OTP is sent to the registered mobile number</h4>
-        <input type="number" placeholder="Enter the OTP sent" onChange={(e)=>
+        <input id="otpinput" type="number" placeholder="Enter the OTP sent" onChange={(e)=>
         {
             setotp(e.target.value)
         }}></input><br/>
