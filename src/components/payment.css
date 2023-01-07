@@ -1,0 +1,393 @@
+*{
+    box-sizing: border-box;
+}
+.paymentpage-container{
+    width: 75%;
+    margin: auto;
+}
+
+.care-image{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    position: absolute;
+    width: 45%;
+    height: 130px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.care-image > img{
+    margin-top: 3%;
+    width: 16%;
+    height: 55px;
+}
+#care-supreme{
+    margin-top: -4%;
+    margin-left: -12%;
+    font-weight: 700;
+}
+#extra-info{
+    position: absolute;
+    text-align: center;
+    margin-top: 6.5%;
+    background-color: rgb(230,252,255);
+    width: 45%;
+    height: 30px;
+    
+}
+.seeAllfeature{
+    margin-top: -7%;
+    margin-left: -12%;
+    color: red;
+    font-weight: 500;
+    cursor: pointer;
+}
+#extra-info > p{
+    margin-top:1%;
+}
+#cashless{
+    margin-left: 7%;
+    color: red;
+    font-weight: 500;
+    cursor: pointer;
+}
+/* complete */
+
+.cover-amount {
+    position: absolute;
+    margin-top: 10%;
+    line-height: 8px;
+    width: 45%;
+    height: 145px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+#medical-treatment-every-year{
+    width: 45%;
+    height: 7vh;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 3px;
+}
+#medical-treatment-every-year > option{
+    font-weight: 500;
+    font-size: 15px;
+}
+/* complete */
+
+.policy-name{
+    padding: 10px;
+    position: absolute ;
+    display: flex;
+    flex-direction: column;
+    margin-top: 21%;
+    width: 45%;
+    height: 30vh;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.policy-heading{
+    margin-top: 1.5%;
+}
+.policy-multiyearPlan{
+    margin-top: -1%;
+}
+
+.policy-year{
+    padding: 10px;
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    margin-top: 26.5%;
+}
+.policy-year div{
+    box-sizing: border-box;
+    height: 80px;
+    width: 200px;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid rgb(46, 43, 43);
+    cursor: pointer;
+    
+}
+.policy-year div:hover{
+    border: 1px solid green;
+    -webkit-box-shadow:0 0 5px rgb(22, 211, 123); 
+    -moz-box-shadow: 0 0 5px rgb(0, 255, 140); 
+    box-shadow:0 0 5px rgba(52, 222, 97, 0.954);
+    border-radius: 2px;
+}
+.easy-emi{
+    margin-top: 30%;
+    position: absolute;
+    margin-top: 32%;
+    font-size: 14px;
+    padding: 10px;
+}
+/* complete */
+.rider{
+    margin-top: 37%;
+    position: absolute;
+    padding: 10px;
+    width: 45%;
+    height: 310px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.rider2{
+    width: 97%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between; 
+    position: absolute;
+    border-radius: 2px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.rider2-para{
+    margin-top: -3%;
+}
+.rider2-heading{
+    margin-top: 1%;
+}.rider3{
+    width: 97%;
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 13%;
+    position: absolute;
+    border-radius: 2px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.cumulative{
+    margin-top: 0%;
+}
+.rider3-cumulative{
+    margin-top: -2%;
+}
+.pricebox{
+    display: flex;
+    flex-direction: row;
+    color :rgb(255,86,48); 
+}
+.plus{
+    margin-left: -15%;
+    margin-top: 10%;
+}
+.rider3-prices{
+    margin-top: 15%;
+    border : 1px solid rgb(255,86,48);
+    width: 10vh;
+    height: 5vh;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 800;
+    padding: 8px;
+}
+.add-on{
+    padding: 10px;
+    margin-top: 36%;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    line-height: 15px;
+    width: 103%;
+    margin-left: -1.5%;
+    height: 40vh;
+}
+.all-btn > button{
+    width: 120px;
+    height: 40px;
+    border-radius: 7%;
+    border: 0;
+    background-color: white;
+    border: 1px solid black;
+    font-size : 14px;
+    padding :5px
+}
+.all-btn > button:hover{
+    border: 1px solid rgb(81,189,143);
+    color: rgb(81,189,143);
+    background-color: rgba(105, 150, 105, 0.1);
+    font-weight: 600;
+}
+.all-btn-2{
+    margin-left: 3%;
+}
+.enhance {
+    margin-top: 3%;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.enhance-img img{
+    width: 100px;
+    height: 50px;
+    margin-top: 4%;  
+}
+.enhance-img h5{
+    font-size: 16px;
+    margin-left: 5%;
+}
+.enhance-img {
+    display: flex;
+    flex-direction: row;
+}
+.myTable{
+    margin-left: -80%;
+    text-align: center;
+}
+#tbody-select-tag{
+    width: 80px;
+    border: 0ch;
+    text-align: center;
+}
+#para{
+    margin-top: 2%;
+    height: 30px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+#members-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.enhance-amount{
+    position: absolute;
+    padding: 10px;
+    padding-left: 14px;
+    width: 70px;
+    height: 35px;
+    margin-left: 14%;
+    margin-top: -6%;
+    border: 1px solid red;
+    border-radius: 6px;
+    color: red;
+    font-weight: 700;
+}
+#para-deductible{
+    margin-top: -7%;
+    padding: 10px;
+    border-top: 1px solid rgb(200, 194, 194);
+}
+
+
+/* complete */
+
+.member-covered{
+    margin-top: 5%;
+    padding: 10px;
+    margin-left: -10px;
+    margin-right: -12px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.payment-footer-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.payment-footer{
+    position: absolute;
+    margin-top: 94%;
+    text-align: center;
+}
+.footer-button{
+    margin-left: 3%;
+}
+.footer-payment-para{
+    width: 80%;
+    height: 45vh;
+    margin: auto;
+    line-height: 25px;
+}
+.footer-para-button{
+    border: 1px solid orange;
+    background-color: white;
+    width: 9%;
+    height: 7vh;
+    margin: 1% 0 0 3%;
+    border-radius: 8px;
+    font-weight: 600;
+    color: orange;
+    cursor: pointer;
+}
+.final-payment{
+    padding: 20px;
+    position: -webkit-sticky;
+    position: absolute;
+    width: 25%;
+    left: 60%;
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+.basePremium{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.addon-on-payment{
+    display: flex;
+    flex-direction: column;   
+    margin-top: -7%;
+}
+.selectRider-payment{ 
+    border-radius: 5px;
+    justify-content: space-between;
+    margin-top: -3%;
+    padding: -12px;
+    height: fit-content;
+}
+.selectRider-payment > div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 5vh;
+}
+.view_extra{
+    text-decoration: none;
+    color: rgb(255,86,48);
+}
+.premium-payment{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.effictively{
+    padding: 11px;
+    border: 1px solid green;
+    background-color:rgb(227,252,239);
+    height: 6vh;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: -1%;
+}
+.proceed-to-pay-button{
+    color: white;
+    background-color:rgb(255,86,48);
+    width: 100%;
+    height: 6vh;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.summary-payment{
+    margin-top: -2%;
+}
+.selectRider-payment p{
+    margin-top: -3%;
+    padding: 17px;
+}
+.selectRider-payment h5{
+    margin-top: -3%;
+    padding: 17px;
+}
+.payment-check-box{
+    margin-top: -3%;
+}
+
+
