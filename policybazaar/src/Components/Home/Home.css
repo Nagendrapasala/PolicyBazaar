@@ -28,15 +28,22 @@
   top: 230px;
   position: absolute;
 }
+.home-img0{
+  margin-top: 45px;
+  margin-right: 10px;
+}
 .home-img {
   position: absolute;
   left: 390px;
   top: 245px;
+  margin-left: 30px;
 }
 .home-img2 {
   top: 90px;
   left: 800px;
   position: absolute;
+  height: 233.15px;
+  width: 430px;
 }
 .home-pro {
   font-size: 22px;
@@ -90,7 +97,8 @@
 
   float: right;
   border-radius: 5px;
-  box-shadow: #a8bde0 0px 0px 20px -5px, #aebdd6 0px 10px 10px -5px;
+  background-color: #F2F7FF;
+  /* box-shadow: #a8bde0 0px 0px 20px -5px, #aebdd6 0px 10px 10px -5px; */
 }
 .home-tol:hover {
   box-shadow: rgb(141, 175, 211) 0px 20px 30px -10px;
@@ -123,10 +131,11 @@
   margin-left: 15%;
 }
 .home-tm1 {
-  color: #0663f6;
-  font-size: 10px;
+  color: black;
+  font-size: 12px;
   position: absolute;
   margin-top: 1.5%;
+  text-align: center;
 }
 .home-tm1-5 {
   color: #0663f6;
@@ -243,7 +252,7 @@
 }
 .home-hl {
   background: #0065ff;
-  width: 70px;
+  width: 100px;
   height: 4px;
   margin: 20px 0 0;
   display: block;
@@ -255,8 +264,8 @@
     Helvetica Neue, Arial, sans-serif;
 }
 .home-de:hover {
-  transform: scale(1.1);
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transform: scale(1.2);
+  box-shadow: rgba(246, 36, 89, 1) 0px 5px 15px;
 }
 .home-de:hover h5 {
   font-weight: 700;

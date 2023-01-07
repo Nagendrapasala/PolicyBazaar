@@ -29,7 +29,7 @@ const responsive = {
 
 const Carosuel = () => {
   return (
-    <div className="App">
+    <div className="App" style={{ marginRight: "70px" }}>
       <Carousel
         swipeable={true}
         draggable={true}
@@ -84,7 +84,7 @@ const Carosuel = () => {
               fontFamily: "Roboto",
             }}
           >
-            Protect yourself & your family against Covid-19
+            Protect yourself & your family against <strong>Covid-19</strong>
           </p>
           <img
             style={{ position: "absolute", marginLeft: "80%", marginTop: "5%" }}
@@ -118,7 +118,7 @@ const Carosuel = () => {
               marginLeft: "5%",
             }}
           >
-            Health Insurance
+            Investment Plans
           </p>
           <p
             style={{
@@ -132,7 +132,7 @@ const Carosuel = () => {
               fontFamily: "Roboto",
             }}
           >
-            Invest 5k per month & get 63.4L in return#{" "}
+            Invest ₹10k and Get <strong>₹1 Crore</strong> return*{" "}
           </p>
           <img
             style={{ position: "absolute", marginLeft: "80%", marginTop: "5%" }}
@@ -167,7 +167,7 @@ const Carosuel = () => {
               marginLeft: "5%",
             }}
           >
-            Health Insurance
+            Home Insurance
           </p>
           <p
             style={{
@@ -181,7 +181,8 @@ const Carosuel = () => {
               fontFamily: "Roboto",
             }}
           >
-            50L cover for your home & 20L cover for household goods{" "}
+            <strong>₹50 Lakh Cover</strong> for Your Home Insurance at Just{" "}
+            <strong>₹80/month*</strong>{" "}
           </p>
           <img
             style={{ position: "absolute", marginLeft: "80%", marginTop: "5%" }}
@@ -215,7 +216,7 @@ const Carosuel = () => {
               marginLeft: "5%",
             }}
           >
-            Health Insurance
+            AskPB
           </p>
           <p
             style={{
@@ -229,7 +230,7 @@ const Carosuel = () => {
               fontFamily: "Roboto",
             }}
           >
-            Protect yourself & your family against Covid-19
+            Got a <strong>question about insurance?</strong> Write to us
           </p>
           <img
             style={{ position: "absolute", marginLeft: "60%", marginTop: "5%" }}

@@ -1,17 +1,13 @@
-import { useNavigate } from "react-router-dom";
 import { styled } from "@mui/material/styles";
 import Carousel from "../Carousel/Carousel";
 
 import Grid from "@mui/material/Grid";
-import Button from "@mui/material/Button";
 import Paper from "@mui/material/Paper";
 
 import "./Home.css";
 
 import thunder from "../../assets/images/thuder.png";
 import thunder1 from "../../assets/images/thuder1.png";
-import akshay from "../../assets/images/akshay.png";
-import hands from "../../assets/images/hands.png";
 import umre from "../../assets/images/Umbrella1.png";
 import bk from "../../assets/images/bk.png";
 import car1 from "../../assets/images/car1.png";
@@ -67,8 +63,6 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 const HomePage = () => {
-  const navigate = useNavigate();
-
   return (
     <>
       <div className="home-main">
@@ -79,145 +73,122 @@ const HomePage = () => {
               the <b>Best Insurance</b>
             </p>
           </div>
+
           <div>
-            <img src={akshay} alt="aksh" className="home-img2" />
+            <img
+              src="https://static.pbcdn.in/cdn/images/home/banner_savetax.png?v=1"
+              alt="aksh"
+              className="home-img2"
+            />
           </div>
+
+          <div style={{display:'flex', flexDirection:'row'}}>
           <div>
             <p>
-              <img src={thunder} alt="thunder" />
+              <img className="home-img0" src={thunder} alt="thunder" />
               <p className="home-cont1">
                 50+ insurers with one of the best prices{" "}
               </p>
             </p>
           </div>
+
           <div>
             <p>
               <img className="home-img" src={thunder1} alt="thunder" />
               <p className="home-cont2">Quick, easy & hassle free</p>
             </p>
           </div>
-          <div className="home-da">
-            <img src={hands} alt="hand" />
-            <h4 className="home-pro">PB Promise</h4>
-            <p className="home-dat">A commitment to our customers</p>
-            <Button variant="contained">Know more</Button>
           </div>
-          <div className="home-maind">
+
+          <div className="home-maind" style={{ marginLeft: "50px" }}>
             <div className="home-tol">
               <img src={umre} alt="one" />
-              <p className="home-tm">Guaranteed Return Plan </p>
+              <p className="home-tm">Travel Insurance </p>
             </div>
+
             <div className="home-tol">
               <img src={Fam1} alt="one" />
               <p className="home-tm">Family Health Insurance</p>
-              <p className="home-tmc" style={{ marginTop: "1.5%" }}>
-                {" "}
-                <spam className="home-dot1"> </spam> New
-              </p>
             </div>
+
             <div className="home-tol">
               <img src={bk} alt="one" />
-              <p
-                className="home-tm"
-                onClick={() => {
-                  navigate("/bikeno");
-                }}
-              >
-                2 Wheeler Insurance{" "}
-              </p>
-              <p className="home-tm1-5" style={{ marginTop: "2%" }}>
-                {" "}
-                <spam className="home-dot"> </spam>Instant Policy
-              </p>
+              <p className="home-tm">2 Wheeler Insurance </p>
             </div>
+
             <div className="home-tol">
               <img src={car1} alt="one" />
-              <p className="home-tm">Car Insurance Plan</p>
-              <p className="home-tm1-5">
-                {" "}
-                <spam className="home-dot"> </spam> Covers covid-19
-              </p>
+              <p className="home-tm">Car Insurance</p>
             </div>
+
             <div className="home-tol">
               <img src={bk} alt="one" />
               <p className="home-tm">Investment Plans </p>
-              <p className="home-tm1-5">
-                {" "}
-                <spam className="home-dot"> </spam> Covers covid-19
-              </p>
             </div>
+
+            <div className="home-tol">
+              <img src={umre} alt="one" />
+              <p className="home-tm">Health Insurance </p>
+            </div>
+
             <div className="home-tol">
               <img src={umre} alt="one" />
               <p className="home-tm">Term Life Insurance </p>
-              <p className="home-tm1">
-                {" "}
-                <spam className="home-dot"> </spam> Covers covid-19
-              </p>
             </div>
+
             <div className="home-tol">
-              <img src={umre} alt="one" />
-              <p className="home-tm">Term Life Insurance </p>
-              <p className="home-tm1">
-                {" "}
-                <spam className="home-dot"> </spam> Covers covid-19
-              </p>
-            </div>
-            <div className="home-tms">
               <img src={box} alt="one" />
-              <p className="home-tm">View All Products </p>
+              <p className="home-tm">Home Insurance </p>
             </div>
-            <div className="home-tms">
-              <img src={cr} alt="one" />
-              <p className="home-tm"> 1 Cr Health Insurance </p>
-            </div>
+
             <div className="home-tol">
               <img src={pepl} alt="one" />
               <p className="home-tm">Group Health Insurance</p>
-              <p className="home-tmc" style={{ marginTop: "1.5%" }}>
-                {" "}
-                <spam className="home-dot1"> </spam> New
-              </p>
             </div>
+
             <div className="home-tol">
               <img src={umre} alt="one" />
               <p className="home-tm">Retirement Plans </p>
-              <p className="home-tmc">
-                {" "}
-                <spam className="home-dot1"> </spam> New
-              </p>
             </div>
+
             <div className="home-tol">
               <img src={bacha} alt="one" />
               <p className="home-tm">Child Savings Plans</p>
-              <p className="home-tmc">
-                {" "}
-                <spam className="home-dot1"> </spam> New
-              </p>
             </div>
+
             <div className="home-tol">
               <img src={tra} alt="one" />
-              <p className="home-tm">Travel Insurance </p>
-              <p className="home-tm1-5">
-                {" "}
-                <spam className="home-dot"> </spam> Covers covid-19
-              </p>
+              <p className="home-tm">Guaranteed Return Plans </p>
             </div>
+
             <div className="home-tol" style={{ marginLeft: "6%" }}>
               <img src={umre} alt="one" />
               <p className="home-tm">Saral Jeevan Bima </p>
-              <p className="home-tmc">
-                {" "}
-                <spam className="home-dot1"> </spam> New
-              </p>
+            </div>
+
+            <div className="home-tol" style={{ marginRight: "-50px" }}>
+              <img src={cr} alt="one" />
+              <p className="home-tm"> Zero Cost Term Plan </p>
             </div>
           </div>
         </div>
-        <p className="home-also">ALSO BUY</p>
+
+        <p className="home-also" style={{marginLeft:'20px'}}>ALSO BUY</p>
         <Grid
           container
-          spacing={2}
-          style={{ width: "80%", alignItems: "left", textAlign: "left" }}
+          spacing={3}
+          style={{ width: "80%", alignItems: "left", textAlign: "left", marginLeft:'20px' }}
         >
+          <Grid item xs="auto">
+            <Item style={{ textAlign: "left" }}>
+              <p className="home-te">
+                {" "}
+                <spam className="home-dot3"></spam> Investment
+              </p>
+              <p className="home-te1">LIC Plans</p>
+            </Item>
+          </Grid>
+
           <Grid item xs="auto">
             <Item style={{ textAlign: "left" }}>
               <p className="home-te">
@@ -227,15 +198,17 @@ const HomePage = () => {
               <p className="home-te1">Return of Premium</p>
             </Item>
           </Grid>
+
           <Grid item xs="auto">
             <Item style={{ textAlign: "left" }}>
               <p className="home-te">
                 {" "}
                 <spam className="home-dot3"></spam> Term Life
               </p>
-              <p className="home-te1">Non-Working Spouse Plan</p>
+              <p className="home-te1">Life Insurance for Housewives</p>
             </Item>
           </Grid>
+
           <Grid item xs="auto">
             <Item style={{ textAlign: "left" }}>
               <p className="home-te" style={{ color: "#FF4D4F" }}>
@@ -249,6 +222,7 @@ const HomePage = () => {
               <p className="home-te1">Corona Virus Health Insurance</p>
             </Item>
           </Grid>
+
           <Grid item xs="auto">
             <Item style={{ textAlign: "left" }}>
               <p className="home-te" style={{ color: "#FF4D4F" }}>
@@ -262,28 +236,21 @@ const HomePage = () => {
               <p className="home-te1">Arogya Sanjeevani</p>
             </Item>
           </Grid>
+
           <Grid item xs="auto">
             <Item style={{ textAlign: "left" }}>
-              <p className="home-te">
-                {" "}
-                <spam className="home-dot3"></spam> Home
-              </p>
-              <p className="home-te1">Home Building & Items</p>
-            </Item>
-          </Grid>
-          <Grid item xs="auto">
-            <Item style={{ textAlign: "left" }}>
-              <p className="home-te" style={{ color: "#3AC2F3" }}>
+              <p className="home-te" style={{ color: "#FF4D4F" }}>
                 {" "}
                 <spam
                   className="home-dot3"
-                  style={{ backgroundColor: "#3AC2F3" }}
+                  style={{ backgroundColor: "#FF4D4F" }}
                 ></spam>{" "}
-                Motor
+                Health
               </p>
-              <p className="home-te1">Comercial Vehicals</p>
+              <p className="home-te1">1 Cr Health Insurance</p>
             </Item>
           </Grid>
+
           <Grid item xs="auto">
             <Item style={{ textAlign: "left" }}>
               <p className="home-te">
@@ -622,6 +589,7 @@ const HomePage = () => {
             display: "flex",
             flexDirection: "row",
             justifyContent: "space-between",
+            gap: "20px",
           }}
         >
           <div className="home-ob">
@@ -656,6 +624,7 @@ const HomePage = () => {
             display: "flex",
             flexDirection: "row",
             justifyContent: "space-between",
+            gap: "20px",
           }}
         >
           <div className="home-ob">
@@ -691,6 +660,7 @@ const HomePage = () => {
             display: "flex",
             flexDirection: "row",
             justifyContent: "space-between",
+            gap: "20px",
           }}
         >
           <div className="home-ob">
@@ -726,6 +696,7 @@ const HomePage = () => {
             display: "flex",
             flexDirection: "row",
             justifyContent: "space-between",
+            gap: "20px",
           }}
         >
           <div className="home-ob">
@@ -761,6 +732,7 @@ const HomePage = () => {
             display: "flex",
             flexDirection: "row",
             justifyContent: "space-between",
+            gap: "20px",
           }}
         >
           <div className="home-ob">
@@ -796,6 +768,7 @@ const HomePage = () => {
             display: "flex",
             flexDirection: "row",
             justifyContent: "space-between",
+            gap: "20px",
           }}
         >
           <div className="home-ob">
@@ -831,6 +804,7 @@ const HomePage = () => {
             display: "flex",
             flexDirection: "row",
             justifyContent: "space-between",
+            gap: "20px",
           }}
         >
           <div className="home-ob">
@@ -870,6 +844,9 @@ const HomePage = () => {
         >
           <h1>Investors</h1>
           <div className="home-hl"></div>
+
+          <br />
+          <br />
 
           <div
             className="marquee"
