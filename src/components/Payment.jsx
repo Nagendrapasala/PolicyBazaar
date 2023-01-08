@@ -437,6 +437,7 @@ const Payment = () => {
             be shared with insurers.Product information is authentic and solely
             based on the information received from the insurers. © Copyright
             2008-2023 policybazaar.com. All Rights Reserved.
+            
           </p>
         </div>
       </div>
