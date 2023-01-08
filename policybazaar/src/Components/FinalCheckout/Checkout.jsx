@@ -3,9 +3,11 @@ import { Navigate } from "react-router-dom"
 import "./Checkout.css"
 import Credit from "./Credit"
 import Debit from "./Debit"
+import { useNavigate } from "react-router-dom"
 const FinalCheckout=()=>
 {
     const[card,setcard]=useState({debit:true,credit:false})
+    const navigate=useNavigate()
     return(
         <div id="fcmaincont" style={{}}>
             <div id="fcparent">
@@ -47,7 +49,8 @@ const FinalCheckout=()=>
                 <div style={{margin:"auto",width:"60%"}}>
                 <button onClick={()=>
                 {
-                    <Navigate to="/otp"/>
+                    console.log("Hi")
+                    navigate("/otp")
                 }}>Proceed To Pay</button>
                 </div>
             </div>

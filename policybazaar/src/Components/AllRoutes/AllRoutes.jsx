@@ -1,4 +1,5 @@
 import {Route,Routes} from "react-router-dom"
+import FinalCheckout from "../FinalCheckout/Checkout"
 import OTP from "../FinalCheckout/OTP"
 import Data from "../Navbar/Data"
 const AllRoutes=()=>
@@ -77,8 +78,9 @@ const AllRoutes=()=>
 
 
 
-                <Route path="/login"></Route>
-                <Route path="/otp" element={<OTP></OTP>}/>
+                <Route path="login"></Route>
+                <Route path="checkout" element={<FinalCheckout />} />
+                <Route path="otp" element={<OTP></OTP>}/>
             </Routes>
         </div>
     )
