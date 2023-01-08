@@ -27,6 +27,7 @@ function App() {
           <Route path='*' element={<div>ERROR</div>} />
         </Route>
           <Route path='/plans' element={<Display_data />} />
+          <Route path='/term' element={<Product />} />
         </Routes>
 
     </div>
