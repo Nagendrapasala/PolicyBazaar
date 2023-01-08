@@ -1,11 +1,14 @@
 import {Route,Routes} from "react-router-dom"
 import FinalCheckout from "../FinalCheckout/Checkout"
 import OTP from "../FinalCheckout/OTP"
+import Login from "../Login/LoginComp/Login"
 import Data from "../Navbar/Data"
+import { ChakraProvider } from '@chakra-ui/react'
 const AllRoutes=()=>
 {
     return(
         <div>
+            
             <Routes>
                 <Route path="/"></Route>
                 <Route path="/lifeinsurance">
@@ -78,7 +81,7 @@ const AllRoutes=()=>
 
 
 
-                <Route path="login"></Route>
+                <Route path="/login" element={<ChakraProvider><Login /></ChakraProvider>}></Route>
                 <Route path="checkout" element={<FinalCheckout />} />
                 <Route path="otp" element={<OTP></OTP>}/>
             </Routes>
