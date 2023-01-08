@@ -1,0 +1,22 @@
+.leftside{
+    display: grid;
+    text-align: center;
+    justify-items: center;
+    padding: 20px;
+}
+.rating{
+    width: 300px;
+}
+.ratings{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+h1{
+    font-size: medium;
+}
+h1+p{
+    font-size: small;
+    padding: 10px;
+    margin-top: -5px;
+}

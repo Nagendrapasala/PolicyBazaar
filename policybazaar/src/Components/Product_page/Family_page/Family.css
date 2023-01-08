@@ -1,0 +1,21 @@
+.family_main{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.leftside{
+    text-align: left;
+}
+.leftside_img{
+
+    width: 70%;
+    height: 500px;
+}
+.leftside>ul{
+    display: grid;
+    gap: 10px;
+}
+.leftside>ul>span{
+    font-size: x-large;
+    font-weight: 700;
+    font-style: italic;
+}

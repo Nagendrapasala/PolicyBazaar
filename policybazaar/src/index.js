@@ -1,20 +1,25 @@
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
+import { ChakraProvider } from '@chakra-ui/react'
+import { Store } from './Reactstore/Store';
 import { Provider } from 'react-redux';
-import reduxStore from './Components/Login/Redux/store';
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
-  <React.StrictMode>
-    <Provider store={reduxStore}>
+    <React.StrictMode>
     <BrowserRouter>
-    <App />
+
+    <Provider store={Store} ><App /></Provider>
+    
+
+      
     </BrowserRouter>
-    </Provider>
-  </React.StrictMode>
+    </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
