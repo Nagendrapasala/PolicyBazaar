@@ -98,7 +98,7 @@ function LoginForm() {
 
   const getAllUser = async () => {
     try {
-      let res = await fetch(`http://localhost:8080/regUser`);
+      let res = await fetch(`https://mock-server-app-6y5e.onrender.com/regUser`);
       let resData = await res.json();
       setAllUsers(resData);
     } catch (error) {
