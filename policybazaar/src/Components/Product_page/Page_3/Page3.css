@@ -1,0 +1,17 @@
+.page3_display{
+    display: grid;
+
+}
+.page3_display>fieldset{
+    width: 300px;
+    margin: 30px;
+}
+.page3_display+div{
+    display: grid;
+    justify-content: center;
+}
+.page3_display+div>button{
+    width: 300%;
+    height: 40px;
+    border-radius: 10px;
+}
