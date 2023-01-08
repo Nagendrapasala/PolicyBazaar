@@ -1,0 +1,129 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+#footercont
+{
+    background-color: black;
+    color: white;
+    line-height: 40px;
+    padding-bottom: 20px;
+}
+#footerchild
+{
+    width: 80%;
+    margin: auto;
+}
+#footerinsurance
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.icontextfooter
+{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+}
+#tc
+{
+    font-size: 12px;
+    line-height: 22px;
+}
+#footermidpart
+{
+    background-color: #202020;
+    color: white;
+    line-height: 40px;
+    padding: 20px 0px;
+}
+#footermidchild
+{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+    list-style: none;
+    color: #a5a5a5;
+    font-weight: 700;
+}
+#footermidchildnext
+{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+}
+#footerchildend
+{
+    display: flex;
+    gap: 10px;
+}
+.footerendicons img
+{
+    height: 30px;
+    padding: 2px;
+    background-color: white;
+    border-radius: 5px;
+}
+#footerendparent
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    #footerinsurance
+    {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: space-evenly;
+    }
+    #footermidchild
+    {
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        line-height: 20px;
+        text-align: center;
+    }
+    #footermidchildnext
+    {
+        justify-content: center;
+    }
+    #footerchildend
+    {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width: 450px) {
+    #footerinsurance
+    {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: space-evenly;
+    }
+    #footermidchild
+    {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        line-height: 20px;
+        text-align: center;
+    }
+    #footermidchildnext
+    {
+        justify-content: center;
+    }
+    #footerchildend
+    {
+       display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+

@@ -1,0 +1,140 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+#fcparent
+{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 50%;
+    margin-top: 40px;
+    display: flex;
+    padding: 20px;
+    gap: 10px;
+    line-height: 35px;
+}
+.fcicon
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    font-size: 30px;
+    background-color: #253858;
+}
+.fcicon img
+{
+    width: 10%;
+    color: white;
+    padding: 5px;
+    border: 1px solid #253858;
+    background-color: white;
+    border-radius: 50px;
+}
+.fcicon button
+{
+    border: none;
+    color: white;
+    background-color: #253858;
+    font-weight:600;
+    font-size: 16px;
+    cursor: pointer;
+}
+#fcchild1
+{
+   width: 40%;
+}
+#fcnotes
+{
+    line-height: 20px;
+}
+#fcchild2
+{
+    margin-top: 40px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#fcmaincont
+{
+    width:90%;
+    margin:auto;
+    margin-bottom:"20px";
+    display:flex;
+    gap: 10px;
+}
+#fcchild2 button,#otpparent button
+{
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+#otpparent
+{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 30%;
+    margin: auto;
+    line-height: 30px;
+    margin-top: 40px;
+    padding: 20px;
+}
+@media screen and (max-width: 1024px) {
+ #fcmaincont
+ {
+    display: block;
+    width: 90%;
+ }
+ #fcparent, #fcchild2
+ {
+    display: block;
+    width: 95%;
+ }
+ #fcchild1
+ {
+    display: flex;
+    width: 90%;
+    margin: auto;
+ }
+ .fcicon
+ {
+    gap: 5px;
+ }
+ #fcchild1 div:nth-child(4)
+ {
+    display: none;
+ }
+ #otpinput
+    {
+        width: 80%;
+    }
+  
+}
+@media screen and (max-width: 450px) {
+    #fcmaincont
+    {
+       display: block;
+       width: 90%;
+    }
+    #fcparent,#fcchild2
+    {
+    display: block;
+    width: 95%;
+    }
+    #fcchild1
+    {
+       display: block;
+       width: 90%;
+        margin: auto;
+    }
+    #fcchild1 div:nth-child(4)
+    {
+       display: none;
+    }
+    #otpinput
+    {
+        width: 80%;
+    }
+}

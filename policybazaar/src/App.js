@@ -1,5 +1,8 @@
 
 import './App.css';
+import AllRoutes from './Components/AllRoutes/AllRoutes';
+import FinalCheckout from './Components/FinalCheckout/Checkout';
+import Footer from './Components/Footer/Footer';
 import HomePage from "./Components/Home/Home";
 import Navbar from './Components/Navbar/Navbar';
 import {Product} from "./Components/Product_page/Insurance_page/Product.js"
@@ -14,8 +17,11 @@ import { Display_data } from './Components/Product_page/data/Display_data';
 function App() {
   return (
     <div>
+      <Navbar/> 
+      <AllRoutes />
+       <Footer />
    
-        <Routes>
+        {/* <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path='/health' element={<Family />} >
           <Route path='health' element={<Family_right />} />
@@ -26,7 +32,7 @@ function App() {
         </Route>
           <Route path='/plans' element={<Display_data />} />
           <Route path='/term' element={<Product />} />
-        </Routes>
+        </Routes> */}
 
     </div>
   );
