@@ -1,0 +1,57 @@
+.rightside_2>h1:first-child{
+  font-size: x-large;
+  font-style: italic;
+  color: rgb(54, 54, 54);
+  
+}
+.rightside_2>h1:nth-child(2){
+    font-size: x-large;
+    font-weight: 500;
+    margin-top: -20px;
+  }
+  .rightside_2>form>h3{
+    font-size: medium;
+    font-weight: 500;
+    color: rgb(54, 54, 54);
+  }
+  .rightside_2>form>div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+  }
+  .rightside_2>form>div>fieldset{
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+
+  }
+  .rightside_2>form>div>fieldset>div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .rightside_2{
+    padding-top: 50px;
+    padding-right: 100px;
+  }
+  input{
+    width: 20px;
+    height: 30px;
+  }
+.continue{
+    width: 50%;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: rgb(247, 98, 43);
+    font-size: large;
+    font-weight: 800;
+    font-style: italic;
+}
+.continue+p{
+    font-size: small;
+}
+.cont{
+    display: grid;
+    justify-items: center;
+}

@@ -1,0 +1,26 @@
+.gender{
+    display: flex;
+    gap: 30px;
+}
+.gender>button{
+    width: 70px;
+}
+.page4_display{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+   gap: 40px;
+   margin: 20px;
+}
+.page4_display>fieldset{
+   display: grid;
+   
+}
+.page4_display+div{
+    display: grid;
+    justify-content: center;
+}
+.page4_display+div>button{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+}
