@@ -1,0 +1,50 @@
+.login_main {
+  background: #aeb6bf;
+  height: 800px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid grey;
+}
+
+.login_container {
+  width: 400px;
+  margin: 50px auto 50px auto;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 30px;
+}
+
+.icon_div {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 22px;
+}
+
+.logo_div > img {
+  margin: auto;
+  width: 150px;
+}
+
+.title_div {
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  margin: 30px auto 50px auto;
+}
+
+.title_div img {
+  width: 150px;
+}
+
+.title_div > div:last-child {
+  padding: 10px;
+}
+
+.changepage {
+  text-align: center;
+  margin: 20px auto 10px auto;
+}
+
+.spn {
+  color: blue;
+}
