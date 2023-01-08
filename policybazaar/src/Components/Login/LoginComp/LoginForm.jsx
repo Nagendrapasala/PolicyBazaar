@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { Navigate } from "react-router-dom";
+import { useDispatch} from "react-redux";
 import { loginAction } from "../Redux/Login/loginAction";
 import {
   Input,
@@ -30,7 +29,6 @@ function LoginForm() {
   });
 
   const dispatch = useDispatch();
-  const { isAuth } = useSelector((store) => store);
   const toast = useToast({ position: "top" });
 
   const handleValuedInput = (e) => {
@@ -39,6 +37,7 @@ function LoginForm() {
       [e.target.name]: e.target.value,
     });
   };
+
   const handleFormSubmit = (e) => {
     if (inputState.phoneNumber.length !== 10) {
       toast({
@@ -111,6 +110,7 @@ function LoginForm() {
       });
     }
   };
+
   useEffect(() => {
     getAllUser();
   }, []);

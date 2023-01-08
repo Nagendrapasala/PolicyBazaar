@@ -1,20 +1,22 @@
-import { useState, useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { Navigate } from "react-router-dom";
+import { useState} from "react";
+import {useSelector } from "react-redux";
+import { Navigate, useNavigate } from "react-router-dom";
+
+import LoginForm from "./LoginForm";
+import SignupForm from "./SignupForm";
 
 import lgnstl from "./Login.module.css";
 import { CgCloseO } from "react-icons/cg";
 
-import LoginForm from "./LoginForm";
-import SignupForm from "./SignupForm";
+
 function Login() {
+
   const [page, setPage] = useState(true);
-  const [navigateToHome, setNavigateToHome] = useState(false);
-  const { isAuth } = useSelector((store) => store);
-  const goBackToHome = () => {
-    setNavigateToHome(true);
-  };
-  if (isAuth || navigateToHome) {
+  const { isAuth } = useSelector((store) => store.login);
+  const navigate = useNavigate();
+
+
+  if (isAuth) {
     return <Navigate to={"/"} />;
   }
 
@@ -24,7 +26,7 @@ function Login() {
         <div className={lgnstl.icon_div}>
           <CgCloseO
             onClick={() => {
-              goBackToHome();
+              navigate("/");
             }}
           />
         </div>

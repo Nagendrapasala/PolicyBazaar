@@ -27,12 +27,14 @@ function SignupForm({ gotoPrevious }) {
     password: "",
   });
   const toast = useToast({ position: "top" });
+
   const handleValuedInput = (e) => {
     setInputState({
       ...inputState,
       [e.target.name]: e.target.value,
     });
   };
+
   const handleFormSubmit = (e) => {
     if (inputState.phoneNumber.length !== 10) {
       toast({
@@ -67,6 +69,7 @@ function SignupForm({ gotoPrevious }) {
       postData();
     }
   };
+
   const hasAlreadyRegistered = () => {
     let present = false;
     allUsers.map(({ phoneNumber }) => {
@@ -76,6 +79,7 @@ function SignupForm({ gotoPrevious }) {
     });
     return present;
   };
+
   const postData = async () => {
     try {
       setLoading(true);
@@ -101,6 +105,7 @@ function SignupForm({ gotoPrevious }) {
       });
     }
   };
+  
   const getAllUser = async () => {
     try {
       let res = await fetch(`http://localhost:8080/regUser`);

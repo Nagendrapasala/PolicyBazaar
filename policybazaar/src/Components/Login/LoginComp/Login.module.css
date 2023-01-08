@@ -5,6 +5,7 @@
   padding: 0;
   border: 1px solid grey;
 }
+
 .login_container {
   width: 400px;
   margin: 50px auto 50px auto;
@@ -12,20 +13,21 @@
   background-color: #fff;
   padding: 30px;
 }
+
 .icon_div {
   display: flex;
   flex-direction: row-reverse;
   font-size: 22px;
 }
+
 .logo_div > img {
   margin: auto;
   width: 150px;
 }
+
 .title_div {
-  /* border: 1px solid red; */
   font-size: 20px;
   font-weight: 600;
-  /* letter-spacing: 0.5px; */
   display: flex;
   margin: 30px auto 50px auto;
 }
@@ -33,6 +35,7 @@
 .title_div img {
   width: 150px;
 }
+
 .title_div > div:last-child {
   padding: 10px;
 }
@@ -41,6 +44,7 @@
   text-align: center;
   margin: 20px auto 10px auto;
 }
+
 .spn {
   color: blue;
 }
