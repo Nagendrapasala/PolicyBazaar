@@ -51,7 +51,15 @@
     border: 2px solid #0065ff;
     background-color: white;
 }
-#navparent>div:nth-child(3) button *
+#navparent>div:nth-child(4) button
+{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #0065ff;
+    background-color: white;
+}
+#navparent>div:nth-child(3) button *,#navparent>div:nth-child(4) button *
 {
     text-decoration: none;
     color:  #0065ff;
@@ -193,6 +201,9 @@
     #navparent
     {
         justify-content: space-between;
+        width: 100%;
+        padding: 20px 0px;
+        margin: 0px 20px;
     }
     #navmenu
     {
@@ -213,6 +224,10 @@
     {
         text-decoration: none;
         color: #53617b;
+    }
+    #navparent>div:first-child
+    {
+        width: 100%;
     }
 }
 @media screen and (max-width: 450px) {
@@ -222,7 +237,10 @@
     }
     #navparent
     {
+        width: 100%;
         justify-content: space-between;
+        padding:20px 0px;
+        margin: 0px 20px;
     }
     #navmenu
     {
@@ -243,6 +261,10 @@
     {
         text-decoration: none;
         color: #53617b;
+    }
+    #navparent>div:first-child
+    {
+        width: 100%;
     }
 }
 

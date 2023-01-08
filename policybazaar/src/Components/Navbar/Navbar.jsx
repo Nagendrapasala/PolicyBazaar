@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import "./Navbar.css"
 import { FcCollapse, FcExpand } from 'react-icons/fc'
 import Insurance from "./Insurance"
@@ -10,10 +10,12 @@ import Support from "./Support"
 import SideMenu from "./SideMenu"
 const Navbar=()=>
 {
+    let logindata=JSON.parse(sessionStorage.getItem("loggedInUserInfo"))
+    let navigate=useNavigate()
     const[hoverstate,sethoverstate]=useState({IP:false,RP:false,Cl:false,Sup:false})
     const[display,setdisplay]=useState(false)
     return(
-        <div style={{display:"flex",alignItems:"center"}}>
+        <div style={{display:"flex",alignItems:"center",width:"100%"}}>
             <div>
                  <HiOutlineMenu onClick={()=>
                 {
@@ -23,7 +25,7 @@ const Navbar=()=>
         <div id="navparent" onMouseEnter={()=>sethoverstate({IP:false,RP:false,Cl:false,Sup:false})}>
             
             <div>
-                <Link to="/"><img alt="policyimage" src="https://static.pbcdn.in/cdn/images/new-home/chlogopb.gif?v=1"/></Link>
+                <Link to="/"><img id="navlogo" alt="policyimage" src="https://static.pbcdn.in/cdn/images/new-home/chlogopb.gif?v=1"/></Link>
             </div>
             <div>
                 <div onMouseEnter={()=>sethoverstate({...hoverstate,IP:true,RP:false,Cl:false,Sup:false})}>
@@ -52,7 +54,18 @@ const Navbar=()=>
                 </div>
             </div>
             <div>
-                <button onMouseEnter={()=>sethoverstate({IP:false,RP:false,Cl:false,Sup:false})}><Link to="/login">Sign in</Link></button>
+                <button onMouseEnter={()=>sethoverstate({IP:false,RP:false,Cl:false,Sup:false})}><Link to="/login">{logindata.isAuth?logindata.name:"Sign In"}</Link></button>
+            </div>
+            <div>
+                <button onClick={()=>
+                {
+                    const user = {
+                        isAuth: false,
+                        name: "",
+                        phoneNumber: "",
+                      };
+                      sessionStorage.setItem("loggedInUserInfo", JSON.stringify(user));
+                }} disabled={logindata.isAuth?false:true} onMouseEnter={()=>sethoverstate({IP:false,RP:false,Cl:false,Sup:false})}>Sign out</button>
             </div>
         </div>
         {display?<SideMenu setdisplay={setdisplay}/>:null}
